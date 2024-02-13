@@ -1,9 +1,19 @@
-import flask 
+from flask import Flask, request, jsonify
 
-app = flask.Flask(__name__)
+app = Flask(__name__)
 
-# TODO: create a route for the delay endpoint.
-#      The route should accept POST requests and return the same message that was sent to it.
+@app.route('/echo', methods=['POST'])
+def echo():
+    # Parse the JSON sent to this endpoint
+    data = request.get_json()
+    
+    # Extract the message from the JSON
+    message = data.get('message', 'No message received')
+    
+    # Return the same message in the response
+    return jsonify({'echo': message})
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
+
+
