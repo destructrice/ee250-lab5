@@ -18,5 +18,7 @@
   
   ### Question 5: In the Windows case, why do we need to convert the signal quality to dBm?
   ### HINT: https://learn.microsoft.com/en-us/windows/win32/api/wlanapi/ns-wlanapi-wlan_association_attributes?redirectedfrom=MSDN
+  
+  ### Question 6: What is the standard deviation? Why is it useful to calculate it?
 
 ...
