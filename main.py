@@ -45,7 +45,8 @@ def get_wifi_signal_strength() -> int:
 def main():
     # Choose at least 5 locations to sample the signal strength at
     # These can be rooms in your house, hallways, different floors, outside, etc. (as long as you can get a WiFi signal)
-    locations = ['bedroom', 'living room', 'kitchen', 'bathroom', 'garage']
+    # locations are referring to places in VHE205
+    locations = ['table1', 'table2', 'table3', 'table4', 'table5', 'table6', 'corner1', 'corner2', 'corner3', 'corner4' ] 
     samples_per_location = 10 # number of samples to take per location
     time_between_samples = 1 # time between samples (in seconds)
 
@@ -57,10 +58,15 @@ def main():
 
         # TODO: collect 10 samples of the signal strength at this location, waiting 1 second between each sample
         # HINT: use the get_wifi_signal_strength function
+
+        for _ in range(samples_per_location):
+            signal_strength = get_wifi_signal_strength()
+            signal_strengths.append(signal_strength)
+            time.sleep(time_between_samples)  # Wait for the specified time between samples
         
         # TODO: calculate the mean and standard deviation of the signal strengths you collected at this location
-        signal_strength_mean = None
-        signal_strength_std = None
+        signal_strength_mean = np.mean(signal_strengths)
+        signal_strength_std = np.std(signal_strengths)
 
         # Question 6: What is the standard deviation? Why is it useful to calculate it?
         data.append((location, signal_strength_mean, signal_strength_std))
