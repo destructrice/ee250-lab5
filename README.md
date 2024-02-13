@@ -30,4 +30,7 @@
   ### Question 9: What did you observe from the plot? How does the signal strength change as you move between locations?
   ###             Why do you think signal strength is weaker in certain locations?
 
+  ### Question 10: Do you notice any trends in the data?
+  ###              How does it differ from Part 1?
+  ###              What do you think is causing the differences?
 ...
