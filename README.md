@@ -21,4 +21,13 @@
   
   ### Question 6: What is the standard deviation? Why is it useful to calculate it?
 
+  ### Question 7: What is a dataframe? Why is it useful to use a dataframe to store the data?
+  ### HINT: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html
+  ### HINT: print the dataframe to see what it looks like
+
+  ### Question 8: Why is it important to plot the error bars? What do they tell us?
+
+  ### Question 9: What did you observe from the plot? How does the signal strength change as you move between locations?
+  ###             Why do you think signal strength is weaker in certain locations?
+
 ...
