@@ -38,7 +38,8 @@ A dataframe is a two-dimensional, mutable (in size), and tabular data structure 
 
   ### Question 9: What did you observe from the plot? How does the signal strength change as you move between locations?
   ###             Why do you think signal strength is weaker in certain locations?
-  
+
+Signal strength is weaker in certain locations because of obstacles and distance to the router. We measured the signal strength at every table and corner in VHE 205. The tables had lower signal strength than the corners, likely because there are people and chairs that serve as obstacles for the signals. 
 
   ### Question 10: Do you notice any trends in the data?
   ###              How does it differ from Part 1?
