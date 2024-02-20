@@ -84,8 +84,16 @@ def main():
     # NOTE: use the error_y parameter of px.bar to plot the error bars (1 standard deviation)
     #   documentation: https://plotly.com/python-api-reference/generated/plotly.express.bar.html
     fig = px.bar(
-        
+        df,
+        x='location',
+        y='signal_strength_mean',
+        error_y='signal_strength_std',
+        title='WiFi Signal Strength by Location',
+        labels={'signal_strength_mean': 'Signal Strength (dBm)'},
+        color='signal_strength_mean',
+        color_continuous_scale=px.colors.sequential.Viridis
     )
+
     # Question 8: Why is it important to plot the error bars? What do they tell us?
 
     # write the plot to a file - make sure to commit the PNG file to your repository along with your code
