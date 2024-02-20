@@ -31,6 +31,7 @@ We need to convert signal quality to dBm for a couple of reasons. First, Linux a
   ### Question 7: What is a dataframe? Why is it useful to use a dataframe to store the data?
   ### HINT: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html
   ### HINT: print the dataframe to see what it looks like
+A dataframe is a two-dimensional, mutable (in size), and tabular data structure that has labeled axes as provided by pandas (which is a library in Python). Using a dataframe to store the data is useful because in the context of measuring wifi signal strength, it allows storing location, mean signal strength, and standard deviation in a structured way. This structure allows us to extract these variables easily to allow for data analysis and graphing. Then we can compare signal strength variability and plot the results. 
 
   ### Question 8: Why is it important to plot the error bars? What do they tell us?
   Similar to standard deviation, error bars help us see variability in the signal strength. This is helpful for visualizing fluctuation to see how signal strength changes over time or in different measurement locations. In general, error bars also help us see whether differences in measurements are statistically significant-- if error bars overlap, the difference is not significant.
