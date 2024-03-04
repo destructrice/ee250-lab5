@@ -44,4 +44,5 @@ Signal strength is weaker in certain locations because of obstacles and distance
   ### Question 10: Do you notice any trends in the data?
   ###              How does it differ from Part 1?
   ###              What do you think is causing the differences?
-...
+
+  The signal strength varies based on location within VHE205, with some areas having stronger signals than others. This makes sense because different locations will have different physical barriers, different distances to the router, and potentially interference from other devices such as computers. The corners of the room seemed to have better signal strength than the tables, likely because there are less physical barriers (fewer people, less equipment, etc in the corners of the room vs. the tables where people sit and do work). 
